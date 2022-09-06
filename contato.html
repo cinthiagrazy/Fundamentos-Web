@@ -23,19 +23,20 @@
         <div>
            
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id= "nome"> 
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id= "nome" onkeyup="validaNome()"> 
+                <div id='txtNome'></div>
                 <br>
-                <br>
-                <label for="email">Email:</label>
-                <input type="text" id= "email">
-                <br>
+                 <label for="email">Email:</label>
+                <input type="text" id= "email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
                 <br>
                 <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id="assunto" cols="50" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="50" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
          </form>
         </div>
         <div class="ml-60">
@@ -76,5 +77,7 @@
     </p> 
     </footer>
     
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
